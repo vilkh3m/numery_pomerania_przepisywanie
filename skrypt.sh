@@ -9,9 +9,14 @@ ARTI=/var/www/html/mtb/artisan
 #PHP path
 PHPPATH=/usr/bin/php
 
-TARGET_EVENT=65
-TARGET_MEGA=138
-TARGET_SPEED=139
+TARGET_EVENT=66
+TARGET_MEGA=140
+TARGET_SPEED=141
+
+
+# event 66
+$PHPPATH $ARTI user:reassignusertrackstartnumbers 65 138 $TARGET_EVENT $TARGET_MEGA
+$PHPPATH $ARTI user:reassignusertrackstartnumbers 65 139 $TARGET_EVENT $TARGET_SPEED
 
 # event 64
 $PHPPATH $ARTI user:reassignusertrackstartnumbers 64 136 $TARGET_EVENT $TARGET_MEGA
